@@ -58,10 +58,16 @@ def getFrais(data: schemas.YupGetStatus):
 async def getFrais(request: Request):
     req = await request.json()
     callbacks.append(req)
+    f = open('callbacks.txt', 'a')
+    f.write(str(req) + '\n')
+    f.close()
     print(req)
     return req
 
 
 @router.get("/callbacks")
 def getCallbacks():
+    f = open('callbacks.txt', 'r')
+    callbacks = f.readlines()
+    f.close()
     return callbacks

@@ -1,0 +1,1 @@
+{'service_id': 'CASHINOMPART', 'recipient_phone_number': '2', 'amount': '3', 'partner_id': 'PARTNER_ID_VALUE', 'partner_transaction_id': '2021-08-31-osg61dvOO3', 'login_api': 'LOGIN_VALUE', 'password_api': 'PASSWORD_VALUE', 'call_back_url': 'https://mockgateway.herokuapp.com/intouch/callback'}
